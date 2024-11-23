@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Categories - Naticoco</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles similar to bestseller cards */
+        .category-items-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 180px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 4px;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1em;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .card p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Back to Homepage -->
+    <header>
+        <div class="logo">
+            <a href="signIn.html">
+                <img src="logo.jpg" alt="Naticoco Logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Tab Navigation for Chicken Categories -->
+    <section id="chicken-categories">
+        <h1>Choose Your Chicken Type</h1>
+        <div class="tab">
+            <button class="tab-link" onclick="openCategory(event, 'NatiChicken')">Nati Chicken</button>
+            <button class="tab-link" onclick="openCategory(event, 'FarmChicken')">Farm Chicken</button>
+            <button class="tab-link" onclick="openCategory(event, 'KadaknadhChicken')">Kadaknadh Chicken</button>
+        </div>
+
+        <!-- Nati Chicken Menu -->
+        <div id="NatiChicken" class="tab-content">
+            <h2>Nati Chicken</h2>
+            <div class="category-items-grid">
+                <div class="card">
+                    <img src="Chicken Breast Boneless With skin.jpg" alt="Chicken Breast Boneless (With Skin)">
+                    <h4>Chicken Breast Boneless (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken curry cut With skin.png" alt="Chicken Curry Cut (With Skin)">
+                    <h4>Chicken Curry Cut (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 12-18 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken Biryani Cut With Skin.png" alt="Chicken Biryani Cut (With Skin)">
+                    <h4>Chicken Biryani Cut (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 6-8 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken Drumsticks With skin.jpg" alt="Chicken Drumsticks (With Skin)">
+                    <h4>Chicken Drumsticks (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 5-6 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken whole leg with skin.jpg" alt="Chicken whole leg (With Skin)">
+                    <h4>Chicken whole leg (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken breast boneless without skin.jpg" alt="Chicken breast boneless (With Skin)">
+                    <h4>Chicken breast boneless (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken curry cut without skin.png" alt="Chicken curry cut without skin">
+                    <h4>Chicken curry cut (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 12-16 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken biryani cut without skin.png" alt="Chicken biryani cut without skin">
+                    <h4>Chicken biryani cut (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 6-8 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken drumsticks without skin.png" alt="Chicken drumsticks without skin">
+                    <h4>Chicken Drumsticks (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 5-6 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken whole leg without skin.png" alt="Chicken whole leg without skin">
+                    <h4>Chicken whole leg (without skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar structure for other chicken options -->
+            </div>
+        </div>
+        
+
+    <!-- Farm Chicken Menu -->
+        <div id="FarmChicken" class="tab-content" style="display: none;">
+            <h2>Farm Chicken</h2>
+            <div class="category-items-grid">
+                <div class="card">
+                    <img src="Chicken Breast Boneless With skin.jpg" alt="Chicken Breast Boneless (With Skin)">
+                    <h4>Chicken Breast Boneless (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken curry cut With skin.png" alt="Chicken Curry Cut (With Skin)">
+                    <h4>Chicken Curry Cut (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 12-18 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken Biryani Cut With Skin.png" alt="Chicken Biryani Cut (With Skin)">
+                    <h4>Chicken Biryani Cut (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 6-8 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken Drumsticks With skin.jpg" alt="Chicken Drumsticks (With Skin)">
+                    <h4>Chicken Drumsticks (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 5-6 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken whole leg with skin.jpg" alt="Chicken whole leg (With Skin)">
+                    <h4>Chicken whole leg (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken breast boneless without skin.jpg" alt="Chicken breast boneless (With Skin)">
+                    <h4>Chicken breast boneless (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken curry cut without skin.png" alt="Chicken curry cut without skin">
+                    <h4>Chicken curry cut (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 12-16 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken biryani cut without skin.png" alt="Chicken biryani cut without skin">
+                    <h4>Chicken biryani cut (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 6-8 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken drumsticks without skin.png" alt="Chicken drumsticks without skin">
+                    <h4>Chicken Drumsticks (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 5-6 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken whole leg without skin.png" alt="Chicken whole leg without skin">
+                    <h4>Chicken whole leg (without skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken Drumsticks With skin.jpg" alt="Chicken Drumsticks (With Skin)">
+                    <h4>Chicken Drumsticks (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken curry cut With skin.png" alt="Chicken curry cut With skin">
+                    <h4>Chicken curry cut (With skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 12-16 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken Biryani Cut With Skin.png" alt="Chicken Biryani Cut With Skin">
+                    <h4>Chicken Biryani Cut (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 6-8 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <img src="Chicken drumsticks without skin.png" alt="Chicken Drumsticks Without skin">
+                    <h4>Chicken Drumsticks (Without skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 5-6 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken whole leg with skin.jpg" alt="Chicken whole leg with skin">
+                    <h4>Chicken whole leg (With skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="chicken breast boneless without skin.jpg" alt="Chicken breast boneless without skin">
+                    <h4>Chicken breast boneless without skin</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken curry cut without skin.png" alt="Chicken curry cut without skin">
+                    <h4>Chicken curry cut (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 12-16 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="Chicken biryani cut without skin.png" alt="Chicken biryani cut without skin">
+                    <h4>Chicken biryani cut (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 6-8 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken drumsticks without skin.png" alt="Chicken Drumsticks (Without Skin)">
+                    <h4>Chicken Drumsticks (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 5-6 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <img src="Chicken whole leg without skin.png" alt="Chicken whole leg (Without Skin)">
+                    <h4>Chicken whole leg (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken banana cut.jpg" alt="Chicken banana cut">
+                    <h4>Chicken Banana Cut</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="Chicken Mince kheema.jpg" alt="Chicken Mince kheema">
+                    <h4>Chicken Mince (kheema)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken liver.jpg" alt="Chicken liver">
+                    <h4>Chicken Liver</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="chicken gizzard.jpg" alt="Chicken gizzard">
+                    <h4>Chicken Gizzard</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken liver & gizzard mix.jpg" alt="Chicken liver & gizzard mix">
+                    <h4>Chicken Liver & Gizzard Mix/h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="chicken wings.jpg" alt="Chicken Wings">
+                    <h4>Chicken Wings</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chciken banana cut.jpg" alt="Chicken batana cut)">
+                    <h4>Chicken Batana cut</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+        
+
+
+        <!-- Kadaknadh Chicken Menu -->
+        <div id="KadaknadhChicken" class="tab-content" style="display: none;">
+            <h2>Kadaknadh Chicken</h2>
+            <div class="category-items-grid">
+                <div class="card">
+                    <img src="chicken Breast boneless(with skin).jpg" alt="Chicken Breast Boneless (With Skin)">
+                    <h4>Chicken Breast Boneless (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken curry cut(with skin).jpg" alt="Chicken Curry Cut (With Skin)">
+                    <h4>Chicken Curry Cut (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 12-16 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken Biryani Cut With Skin.png" alt="Chicken Biryani Cut (With Skin)">
+                    <h4>Chicken Biryani Cut (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 6-8 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken Drumsticks With skin.jpg" alt="Chicken Drumsticks (With Skin)">
+                    <h4>Chicken Drumsticks (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 5-6 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken whole leg with skin.jpg" alt="Chicken whole leg (With Skin)">
+                    <h4>Chicken whole leg (With Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken breast boneless without skin.jpg" alt="Chicken breast boneless (With Skin)">
+                    <h4>Chicken breast boneless (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chicken curry cut without skin.png" alt="Chicken curry cut without skin">
+                    <h4>Chicken curry cut (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 12-16 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken biryani cut without skin.png" alt="Chicken biryani cut without skin">
+                    <h4>Chicken biryani cut (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 6-8 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken drumsticks without skin.png" alt="Chicken drumsticks without skin">
+                    <h4>Chicken Drumsticks (Without Skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 5-6 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Chicken whole leg without skin.png" alt="Chicken whole leg without skin">
+                    <h4>Chicken whole leg (without skin)</h4>
+                    <div class="small_box">
+                        <div class="small_box_content1">
+                            <p>500g | 2-3 Pieces</p>
+                            <h4>₹149</h4>
+                        </div>
+                        <div class="small_box_content2">
+                            <h4>ADD</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+    </section>
+    <script>
+        function openCategory(evt, categoryName) {
+            const tabContents = document.querySelectorAll(".tab-content");
+            tabContents.forEach(content => content.style.display = "none");
+            document.getElementById(categoryName).style.display = "block";
+
+            const tabLinks = document.querySelectorAll(".tab-link");
+            tabLinks.forEach(link => link.classList.remove("active"));
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
