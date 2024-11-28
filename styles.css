@@ -728,17 +728,17 @@ body {
   right: 10px;
 }
 
-.swiper-button-prev:hover,
+/* .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 /* Media query for tablets (width less than 768px) */
 @media screen and (max-width: 768px) {
   .swiper-button-prev,
   .swiper-button-next {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -746,8 +746,8 @@ body {
 @media screen and (max-width: 480px) {
   .swiper-button-prev,
   .swiper-button-next {
-    width: 25px;
-    height: 25px;
+    width: 10px;
+    height: 10px;
   }
 }
 
